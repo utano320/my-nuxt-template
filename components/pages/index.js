@@ -4,7 +4,8 @@ import moment from 'moment';
 export default {
   data() {
     return {
-      msg: 'Hello MyApp!'
+      msg: 'Hello MyApp!',
+      apiHost: process.env.API_HOST
     };
   },
   methods: {

@@ -3,6 +3,7 @@
     <h1>MyApp</h1>
     <p>{{ msg }}</p>
     <p>{{ now() }}</p>
+    <p>{{ apiHost }}</p>
   </div>
 </template>
 
