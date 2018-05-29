@@ -7,5 +7,32 @@
   </div>
 </template>
 
-<script src="~/components/pages/index.js"></script>
-<style scoped lang="scss" src="~/components/pages/index.scss"></style>
+<script>
+// import Vue from 'vue';
+import moment from 'moment';
+
+export default {
+  data() {
+    return {
+      msg: 'Hello MyApp!',
+      apiHost: process.env.API_HOST
+    };
+  },
+  methods: {
+    now() {
+      return moment().format('YYYY-MM-DD HH:mm:ss');
+    }
+  }
+};
+</script>
+
+<style scoped lang="scss">
+#app {
+  font-family: Verdana, sans-serif;
+  color: skyblue;
+
+  p {
+    color: tomato;
+  }
+}
+</style>
